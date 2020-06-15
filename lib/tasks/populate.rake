@@ -6,10 +6,10 @@ namespace :db do
     Rake::Task['db:reset'].invoke
 
     20.times do 
-        Articles.create do |article|
-            articles.title = Faker::Food.vegetables
-            articles.image = Faker::LoremFlickr.image(size: "50x60", search_terms: ['vegetables'])
-            article.body = Faker::Lorem.paragraph
+        Product.create do |product|
+            product.title = Faker::Food.dish
+            product.image = Faker::LoremPixel.image
+            product.description = Faker::Lorem.paragraph
         end
     end
 end

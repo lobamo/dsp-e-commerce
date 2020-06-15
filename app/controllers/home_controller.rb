@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @articles = Articles.all
+    @products = Product.all
   end
 end
